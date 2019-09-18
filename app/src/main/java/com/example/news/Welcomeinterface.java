@@ -36,7 +36,7 @@ public class Welcomeinterface extends AppCompatActivity implements View.OnClickL
             @Override
             public void run() {
                 //从闪屏界面跳转到首界面
-                Intent intent = new Intent(Welcomeinterface.this,MainActivity.class);
+                Intent intent = new Intent(Welcomeinterface.this,Login.class);
                 startActivity(intent);
                 finish();
             }
@@ -69,7 +69,7 @@ public class Welcomeinterface extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.countdown:
-                Intent intent = new Intent(Welcomeinterface.this,MainActivity.class);
+                Intent intent = new Intent(Welcomeinterface.this,Login.class);
                 startActivity(intent);
                 finish();
                 if (runnable != null){
